@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kotovod</string>
+    <string name="Privetstvie">Поздороваться</string>
+    <string name="Hello_Kitty">Hello Kitty!</string>
+    <string name="Count_Birds">Считаем ворон</string>
+    <string name="Count_cats">Считаем котиков</string>
 </resources>

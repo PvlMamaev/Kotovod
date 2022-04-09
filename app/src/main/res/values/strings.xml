@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Kotovod</string>
+    <string name="red">красный</string>
+    <string name="yellow">желтый</string>
+    <string name="green">зеленый</string>
 </resources>

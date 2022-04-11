@@ -6,19 +6,19 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp"/>
+        android:layout_height="100dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Выберите правильный ответ"
-        android:textSize="20sp"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:text="@string/ChooseRightAnswer"
+        android:textSize="20sp" />
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="50dp" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -30,28 +30,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Ворона"/>
+            android:text="@string/crow" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp" />
 
         <RadioButton
             android:id="@+id/radio_dog"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="Сраный песик"/>
+            android:text="@string/dog" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp"/>
+            android:layout_height="20dp" />
 
         <RadioButton
             android:id="@+id/radio_cat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Кот Васька"/>
+            android:text="@string/cat" />
 
     </RadioGroup>
 

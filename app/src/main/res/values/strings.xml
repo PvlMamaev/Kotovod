@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Kotovod</string>
     <string name="who">Кто украл два кусочка колбаски?</string>
+    <string name="Choose">Сделать выбор</string>
+    <string name="cat">Кот Васька</string>
+    <string name="dog">Сраный песик</string>
+    <string name="crow">Ворона</string>
+    <string name="ChooseRightAnswer">Выберите правильный ответ</string>
 </resources>

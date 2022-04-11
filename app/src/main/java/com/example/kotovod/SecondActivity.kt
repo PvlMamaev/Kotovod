@@ -5,9 +5,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.RadioGroup
 
-class SecondActivity: Activity() {
+class SecondActivity : Activity() {
 
-    companion object{
+    companion object {
         const val THIEF = "com.example.kotovod.SecondActivity"
     }
 
@@ -19,7 +19,7 @@ class SecondActivity: Activity() {
 
         radioGroup.setOnCheckedChangeListener { _, optionId ->
             val answerIntent = Intent()
-            when(optionId){
+            when (optionId) {
                 R.id.radio_dog -> answerIntent.putExtra(THIEF, "Сраный песик")
                 R.id.radio_crow -> answerIntent.putExtra(THIEF, "Сраная ворона")
                 R.id.radio_cat -> answerIntent.putExtra(THIEF, "Лошадь Пржевальского")

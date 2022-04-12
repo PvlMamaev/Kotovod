@@ -9,6 +9,7 @@ class SecondActivity : Activity() {
 
     companion object {
         const val THIEF = "com.example.kotovod.SecondActivity"
+        // даем название ключу чтобы передать значение которое выбрал пользователь
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,8 +19,9 @@ class SecondActivity : Activity() {
         val radioGroup = findViewById<RadioGroup>(R.id.radioGroup)
 
         radioGroup.setOnCheckedChangeListener { _, optionId ->
-            val answerIntent = Intent()
-            when (optionId) {
+                    // тут я не понял что такое "_" и "optionId"
+            val answerIntent = Intent() // интент для передачи результата
+            when (optionId) { // если...
                 R.id.radio_dog -> answerIntent.putExtra(THIEF, "Сраный песик")
                 R.id.radio_crow -> answerIntent.putExtra(THIEF, "Сраная ворона")
                 R.id.radio_cat -> answerIntent.putExtra(THIEF, "Лошадь Пржевальского")

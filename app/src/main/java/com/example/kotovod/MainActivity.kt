@@ -9,9 +9,10 @@ import android.widget.TextView
 class MainActivity :
     Activity() { // но если там будет стоять AppCompatActivity() то 25 строка перестанет работать
 
-    companion object {
-        const val REQUEST_CHOOSE_THIEF = 0
+    companion object { // задаем имена ключам
+        const val REQUEST_CHOOSE_THIEF = 0 // ключ для возвращенного значения
         const val THIEF = "com.example.kotovod.SecondActivity"
+        // ключ для извлечения из интента со 2-го активити
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,6 +22,7 @@ class MainActivity :
 
         button_choose.setOnClickListener {
             val questionIntent = Intent(this@MainActivity, SecondActivity::class.java)
+            // интент для переключения на 2й экран
             // создаем интент в котором будет содержаться информация о выборе
             startActivityForResult(questionIntent, REQUEST_CHOOSE_THIEF)
             // работает только если наследовать класс от AppCompatActivity()

@@ -23,10 +23,9 @@ class MainActivity : AppCompatActivity() {
         val editText = findViewById<EditText>(R.id.editText)
 
         button1.setOnClickListener {
-            var str: String
-            str = getStringOrientation()
             // editText.text = getStringOrientation() а чо нельзя???
-            editText.text = str
+            // а вот нельзя, используй setText( "text" )
+            editText.setText(getStringOrientation())
         }
     }
 

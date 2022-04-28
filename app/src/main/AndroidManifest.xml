@@ -27,7 +27,7 @@
             android:name=".AboutActivity"
             android:label="@string/about_title"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.Design.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.Dialog.MinWidth">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
